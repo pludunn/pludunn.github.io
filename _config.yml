@@ -1,0 +1,15 @@
+styles:
+- /classless.css
+- /addons/bootless.css
+- /addons/hljs-style.css
+- /addons/tabbox.css
+- /addons/themes.css
+
+scripts:
+- /highlight.min.js
+- /js.cookie.min.js
+- /script.js
+
+exclude:
+- README.md
+- LICENSE
