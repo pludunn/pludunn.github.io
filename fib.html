@@ -1,0 +1,32 @@
+---
+
+layout: default
+title: Fibonacci Sequence
+styles: []
+scripts:
+- /fib.js
+permalink: /fib/index.html
+
+---
+
+<div class="row">
+    <div class="col">
+        <label for="n">Number of terms:</label>
+        <input type="number" id="n" min="2" max="1000" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-4">
+        <label for="phi">Phi Estimation:</label>
+        <input id="phi" type="text" readonly />
+    </div>
+    <div class="col-4">
+        <label for="psi">Psi Estimation:</label>
+        <input id="psi" type="text" readonly />
+    </div>
+    <div class="col-4">
+        <label for="rt5">Root 5 Estimation:</label>
+        <input id="rt5" type="text" readonly />
+    </div>
+</div>
+<p>Fibs: <span id="fibs">Loading...</span></p>
