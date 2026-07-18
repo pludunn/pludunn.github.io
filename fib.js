@@ -5,7 +5,7 @@ const update = function() {
     while (fibs.length < n) {
         fibs.push(fibs[fibs.length - 1] + fibs[fibs.length - 2]);
     }
-    document.getElementById("fibs").textContent = fibs;
+    document.getElementById("fibs").textContent = fibs.join(", ");
     let phi = fibs[fibs.length - 1] / fibs[fibs.length - 2];
     document.getElementById("phi").value = phi;
     let rt5 = (2 * phi) - 1;
