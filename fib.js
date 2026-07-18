@@ -18,5 +18,9 @@ update();
 document.getElementById("n").value = n;
 document.getElementById("n").addEventListener("input", function(e) {
     n = parseInt(e.target.value);
+    if (n < 3 || n > 1000 || isNaN(n)) {
+        n = 13;
+        alert("Please choose a number that exists and is in range [3, 1000].");
+    }
     update();
 });
