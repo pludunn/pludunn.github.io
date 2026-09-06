@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% if page.title %}
+    <title>{{ page.title }}</title>
+    {% else %}
+    <title>{{ site.title }}</title>
+    {% endif %}
+    {% if page.icon %}
+    <link rel="icon" href="{{ page.icon }}" />
+    {% else %}
+    <link rel="icon" href="{{ site.icon }}" />
+    {% endif %}
+    {% for i in site.styles %}
+    <link rel="stylesheet" href="{{ i }}" />
+    {% endfor %}
+    {% if page.styles %}
+    {% for i in page.styles %}
+    <link rel="stylesheet" href="{{ i }}" />
+    {% endfor %}
+    {% endif %}
+</head>
+
+<body>
+    <noscript>Warning: This browser does not support JavaScript. Please open this website on another browser like Chrome
+        or Safari instead.</noscript>
+    <nav class="row">
+        <div class="col-6">
+            <a href="/">Home</a>
+        </div>
+        <div class="col-6 text-right">
+            <a href="https://github.com/pludunn/pludunn.github.io">GitHub</a>
+        </div>
+    </nav>
+    <main>{{ content }}</main>
+    {% for i in site.scripts %}
+    <script src="{{ i }}"></script>
+    {% endfor %}
+    {% if page.scripts %}
+    {% for i in page.scripts %}
+    <script src="{{ i }}"></script>
+    {% endfor %}
+    {% endif %}
+
+</body>
+
+</html>

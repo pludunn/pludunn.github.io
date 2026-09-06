@@ -1,0 +1,14 @@
+exclude:
+- LICENSE
+- README.md
+title: Plu's Website!
+scripts:
+- https://unpkg.com/js-cookie/dist/js.cookie.min.js
+- https://unpkg.com/@highlightjs/cdn-assets/highlight.min.js
+styles:
+- https://classless.de/classless.css
+- https://classless.de/addons/bootless.css
+- https://classless.de/addons/hljs-style.css
+- https://classless.de/addons/tabbox.css
+- https://classless.de/addons/themes.css
+icon: https://em-content.zobj.net/source/apple/76/rainbow-flag_1f3f3-fe0f-200d-1f308.png
